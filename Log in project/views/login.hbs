@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="./style.css">
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+<div class="wrapper">
+    <div class="form-container">
+        <h3 class="title"><i class="far fa-caret-square-right"></i> Login</h3>
+        <form id="login-form" class="form-horizontal" action="/verify" method="post">
+        <h6 class="text-danger text-center">{{msg}}</h6>
+            <!-- Username  -->
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+                <span id="username-error" style="color: red; display: none;">Please enter a valid username.</span>
+            </div>
+
+
+            <!-- Password  -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required minlength="6">
+                <span id="password-error" style="color: red; display: none;">Password must be at least 6 characters long.</span>
+            </div>
+
+            <button type="submit" class="btn signup">LOG IN</button>
+            
+        </form>
+    </div>
+</div>
